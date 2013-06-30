@@ -35,3 +35,5 @@ runtime! init/**.vim
 " Machine-local vim settings - keep this at the end
 " --------------------------
 silent! source ~/.vimrc.local
+
+set wildignore+=spec/support/fixtures/vcr_cassettes/**          " ...Also vendor.
