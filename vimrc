@@ -10,30 +10,51 @@
 " merge between branches and repos.
 "
 " Please do not add configuration to this file, unless it *really* needs to
-" come first or last, like Pathogen and sourcing the machine-local config.
+" come first or last, like Vundle and sourcing the machine-local config.
 " Instead, add it to one of the files in .vim/init, or create a new one.
 
 
-" Pathogen (This must happen first.)
+" Vundle (This must happen first.)
 " --------
 
 filetype off                    " Avoid a Vim/Pathogen bug
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 set nocompatible                " Don't maintain compatibility with vi
-syntax on                       " Highlight known syntaxes
-filetype plugin indent on
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+syntax on                       " Highlight known syntaxes
+
+" Vundles
+" ---------------------------
+
+Bundle "gmarik/vundle"
+Bundle "mileszs/ack.vim"
+Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/nerdcommenter"
+Bundle "altercation/vim-colors-solarized"
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle "pangloss/vim-javascript"
+Bundle "vim-ruby/vim-ruby"
+Bundle 'ctrlp.vim'
+Bundle 'bling/vim-airline'
+Bundle "tpope/vim-rails"
+Bundle "tpope/vim-unimpaired"
+Bundle "tpope/vim-fugitive"
+
+" Clojure
+Bundle "tpope/vim-fireplace"
+Bundle "guns/vim-clojure-static"
+Bundle "kien/rainbow_parentheses.vim"
+Bundle "tpope/vim-classpath"
+
+filetype plugin indent on
 
 " Source initialization files
 " ---------------------------
 
 runtime! init/**.vim
 
-
 " Machine-local vim settings - keep this at the end
 " --------------------------
 silent! source ~/.vimrc.local
-
-set wildignore+=spec/support/fixtures/vcr_cassettes/**          " ...Also vendor.
