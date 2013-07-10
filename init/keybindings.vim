@@ -126,3 +126,6 @@ nmap du :diffupdate<CR>
 
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
+
+" CtrlP
+nmap <Leader>f :CtrlP<CR>
