@@ -23,7 +23,6 @@ set nocompatible                " Don't maintain compatibility with vi
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-syntax on                       " Highlight known syntaxes
 
 " Vundles
 " ---------------------------
@@ -41,6 +40,12 @@ Bundle 'bling/vim-airline'
 Bundle "tpope/vim-rails"
 Bundle "tpope/vim-unimpaired"
 Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-endwise"
+Bundle "kchmck/vim-coffee-script"
+Bundle "matchit.zip"
+Bundle "myusuf3/numbers.vim"
+Bundle "nono/vim-handlebars"
+
 
 " Clojure
 Bundle "tpope/vim-fireplace"
@@ -48,6 +53,7 @@ Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
 Bundle "tpope/vim-classpath"
 
+syntax on                       " Highlight known syntaxes
 filetype plugin indent on
 
 " Source initialization files
