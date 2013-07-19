@@ -127,3 +127,6 @@ map <leader>u :GundoToggle<CR>
 
 " CtrlP
 nmap <Leader>f :CtrlP<CR>
+
+nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F4> :NumbersOnOff<CR>
