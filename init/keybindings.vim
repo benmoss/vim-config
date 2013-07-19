@@ -117,9 +117,7 @@ imap <F1>           <Nop>
 map <Leader><Leader> :!
 
 " AckGrep current word
-map <leader>a :call AckGrep()<CR>
-" AckVisual current selection
-vmap <leader>a :call AckVisual()<CR>
+map <leader>a :Ack! "<cword>"<CR>
 
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
