@@ -41,10 +41,12 @@ Bundle "tpope/vim-rails"
 Bundle "tpope/vim-unimpaired"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-endwise"
+Bundle "tpope/vim-haml"
 Bundle "kchmck/vim-coffee-script"
 Bundle "matchit.zip"
 Bundle "myusuf3/numbers.vim"
 Bundle "nono/vim-handlebars"
+Bundle "ecomba/vim-ruby-refactoring"
 
 
 " Clojure
