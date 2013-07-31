@@ -43,10 +43,13 @@ Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-endwise"
 Bundle "tpope/vim-haml"
 Bundle "kchmck/vim-coffee-script"
+Bundle "tpope/vim-surround"
 Bundle "matchit.zip"
-Bundle "myusuf3/numbers.vim"
 Bundle "nono/vim-handlebars"
 Bundle "ecomba/vim-ruby-refactoring"
+Bundle "L9"
+Bundle "FuzzyFinder"
+Bundle "scrooloose/syntastic"
 
 
 " Clojure
@@ -62,7 +65,3 @@ filetype plugin indent on
 " ---------------------------
 
 runtime! init/**.vim
-
-" Machine-local vim settings - keep this at the end
-" --------------------------
-silent! source ~/.vimrc.local

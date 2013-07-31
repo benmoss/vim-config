@@ -1,4 +1,4 @@
-set guifont=Menlo:h21
+set guifont=Menlo:h16
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
@@ -21,6 +21,7 @@ set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
 set wildignore+=vendor/**          " ...Also vendor.
+set wildignore+=public
 
 set list                        " Show whitespace
 if has("gui_running")
@@ -63,3 +64,10 @@ autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or M
 if has("gui_running")
   set noballooneval
 endif
+
+" Show a line at 79 columns
+set colorcolumn=79
+
+" CtrlP
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_max_files = 10000
