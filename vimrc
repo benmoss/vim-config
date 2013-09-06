@@ -50,7 +50,8 @@ Bundle "ecomba/vim-ruby-refactoring"
 Bundle "L9"
 Bundle "FuzzyFinder"
 Bundle "scrooloose/syntastic"
-
+Bundle 'regreplop.vim'
+Bundle 'Tabular'
 
 " Clojure
 Bundle "tpope/vim-fireplace"
