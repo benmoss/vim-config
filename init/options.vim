@@ -16,14 +16,11 @@ set shiftwidth=2                " Width of autoindent
 set number                      " Line numbers
 set nowrap                      " No wrapping
 set backspace=indent,eol,start " Let backspace work over anything.
-set wildignore+=tags               " Ignore tags when globbing.
-set wildignore+=tmp/**             " ...Also tmp files.
-set wildignore+=public/uploads/**  " ...Also uploads.
-set wildignore+=public/images/**   " ...Also images.
-set wildignore+=vendor/**          " ...Also vendor.
-set wildignore+=public
-set wildignore+=*/node_modules/*
 
+let g:ctrlp_custom_ignore = {
+      \ 'dir': '\v[\/]?.(git|public|bin|node_modules|tmp)$',
+      \ 'file': '\v.(jpg|png|gif)$'
+      \ }
 
 set list                        " Show whitespace
 if has("gui_running")
