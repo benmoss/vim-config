@@ -16,6 +16,7 @@ map Y           y$
 " Search
 nmap <leader>s  :%s/
 vmap <leader>s  :s/
+nnoremap <leader>S  :%s/\<<C-r><C-w>\>/
 
 " Split screen
 map <leader>v   :vsp<CR>
