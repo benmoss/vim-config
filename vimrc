@@ -52,6 +52,7 @@ Bundle "FuzzyFinder"
 Bundle "scrooloose/syntastic"
 Bundle 'regreplop.vim'
 Bundle 'Tabular'
+Bundle 'Gundo'
 
 " Clojure
 Bundle "tpope/vim-fireplace"
