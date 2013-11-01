@@ -70,3 +70,6 @@ set colorcolumn=79
 " CtrlP
 let g:ctrlp_match_window_reversed=0
 let g:ctrlp_max_files = 10000
+
+" Open Quickfix with grep/Ggrep
+autocmd QuickFixCmdPost *grep* cwindow
