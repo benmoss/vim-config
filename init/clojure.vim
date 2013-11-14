@@ -1,0 +1,3 @@
+autocmd Filetype clojure RainbowParenthesesActivate
+autocmd Filetype clojure RainbowParenthesesLoadRound
+autocmd Filetype clojure RainbowParenthesesLoadSquare
