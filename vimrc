@@ -53,6 +53,7 @@ Bundle "scrooloose/syntastic"
 Bundle 'regreplop.vim'
 Bundle 'Tabular'
 Bundle 'Gundo'
+Bundle 't9md/vim-ruby-xmpfilter'
 
 " Clojure
 Bundle "tpope/vim-fireplace"

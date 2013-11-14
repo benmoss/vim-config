@@ -88,8 +88,8 @@ map <leader>u :GundoToggle<CR>
 " CtrlP
 nmap <Leader>f :CtrlP<CR>
 
-nnoremap <F3> :NumbersToggle<CR>
-nnoremap <F4> :NumbersOnOff<CR>
+map <F4> <Plug>(xmpfilter-mark)
+map <F5> <Plug>(xmpfilter-run)
 
 " encourage me to use Ctrl-[ rather than Esc
 :inoremap <Esc> <Esc>:echoerr "Use CTRL-["<CR>
