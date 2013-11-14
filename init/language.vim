@@ -15,7 +15,7 @@ autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp call StripTrailingWhitespace()
 autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.html,*.xml,*.erb,*.haml call StripTrailingWhitespace()
 
 " Java, PHP
-autocmd BufWritePre *.java,*.php,*.feature call StripTrailingWhitespace()
+autocmd BufWritePre *.java,*.php,*.feature,*.clojure,*.coffee call StripTrailingWhitespace()
 
 " Highlight JSON files as javascript
 autocmd BufRead,BufNewFile *.json set filetype=javascript
