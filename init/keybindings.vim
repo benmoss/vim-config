@@ -90,8 +90,3 @@ nmap <Leader>f :CtrlP<CR>
 
 map <F4> <Plug>(xmpfilter-mark)
 map <F5> <Plug>(xmpfilter-run)
-
-" encourage me to use Ctrl-[ rather than Esc
-:inoremap <Esc> <Esc>:echoerr "Use CTRL-["<CR>
-:inoremap <C-[> <Esc>
-

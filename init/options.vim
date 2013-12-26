@@ -18,7 +18,7 @@ set nowrap                      " No wrapping
 set backspace=indent,eol,start " Let backspace work over anything.
 
 let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/]?.(git|bin|node_modules|tmp|out|target)$',
+      \ 'dir': '\v[\/]?.(git|bin|node_modules|tmp|out|target|generated)$',
       \ 'file': '\v.(jpg|png|gif)$'
       \ }
 
