@@ -55,6 +55,7 @@ Bundle 'regreplop.vim'
 Bundle 'Tabular'
 Bundle 'Gundo'
 Bundle 't9md/vim-ruby-xmpfilter'
+Bundle 'mhinz/vim-signify'
 
 " Clojure
 Bundle "tpope/vim-fireplace"

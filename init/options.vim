@@ -73,3 +73,5 @@ let g:ctrlp_max_files = 10000
 
 " Open Quickfix with grep/Ggrep
 autocmd QuickFixCmdPost *grep* cwindow
+
+let g:signify_vcs_list = ['git']
