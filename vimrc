@@ -62,8 +62,6 @@ Bundle 'mhinz/vim-signify'
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
-Bundle "tpope/vim-classpath"
-Bundle 'dgrnbrg/vim-redl'
 Bundle 'paredit.vim'
 
 syntax on                       " Highlight known syntaxes
