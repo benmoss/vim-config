@@ -18,9 +18,10 @@ set nowrap                      " No wrapping
 set backspace=indent,eol,start " Let backspace work over anything.
 
 let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/]?.(git|bin|node_modules|tmp|out|target|generated)$',
+      \ 'dir': '\v[\/]?.(git|bin|node_modules|tmp|target|generated)$',
       \ 'file': '\v.(jpg|png|gif)$'
       \ }
+
 
 set list                        " Show whitespace
 if has("gui_running")
@@ -67,6 +68,9 @@ endif
 " Show a line at 79 columns
 set colorcolumn=79
 
+" Don't syntax highlight after col 120
+" set synmaxcol=120
+
 " CtrlP
 let g:ctrlp_match_window_reversed=0
 let g:ctrlp_max_files = 10000
@@ -75,3 +79,6 @@ let g:ctrlp_max_files = 10000
 autocmd QuickFixCmdPost *grep* cwindow
 
 let g:signify_vcs_list = ['git']
+
+" automatically reload vimrc after it is saved
+autocmd! bufwritepost .vimrc source %

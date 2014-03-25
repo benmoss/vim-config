@@ -57,6 +57,8 @@ Bundle 'Tabular'
 Bundle 'Gundo'
 Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'mhinz/vim-signify'
+Bundle "dougireton/vim-chef"
+
 
 " Clojure
 Bundle "tpope/vim-fireplace"
