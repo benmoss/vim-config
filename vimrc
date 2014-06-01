@@ -64,7 +64,7 @@ Bundle "dougireton/vim-chef"
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
-Bundle 'paredit.vim'
+Bundle 'guns/vim-sexp'
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
