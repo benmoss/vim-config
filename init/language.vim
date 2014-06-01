@@ -31,4 +31,6 @@ autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
 autocmd FileType ruby imap  <Space>=><Space>
 
 " Open all folds in Markdown.
-autocmd FileType mkd normal zR
+autocmd FileType markdown,mkd normal zR
+
+autocmd FileType markdown,mkd setlocal tw=79
