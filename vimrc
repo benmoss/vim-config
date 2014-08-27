@@ -59,12 +59,11 @@ Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'mhinz/vim-signify'
 Bundle "dougireton/vim-chef"
 
-
 " Clojure
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
-Bundle 'guns/vim-sexp'
+Bundle 'paredit.vim'
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
