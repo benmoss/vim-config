@@ -34,3 +34,5 @@ autocmd FileType ruby imap  <Space>=><Space>
 autocmd FileType markdown,mkd normal zR
 
 autocmd FileType markdown,mkd setlocal tw=79
+
+autocmd FileType go setlocal noexpandtab
