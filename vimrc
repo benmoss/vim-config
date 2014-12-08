@@ -62,6 +62,8 @@ Bundle 'fatih/vim-go'
 Bundle "flazz/vim-colorschemes"
 
 " Clojure
+Bundle "tpope/vim-leiningen"
+Bundle "tpope/vim-classpath"
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
