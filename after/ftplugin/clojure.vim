@@ -1,0 +1,4 @@
+RainbowParenthesesActivate
+RainbowParenthesesLoadRound
+RainbowParenthesesLoadSquare
+RainbowParenthesesLoadBraces

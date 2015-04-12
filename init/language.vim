@@ -35,4 +35,4 @@ autocmd FileType markdown,mkd normal zR
 
 autocmd FileType markdown,mkd setlocal tw=79
 
-autocmd FileType go setlocal noexpandtab
+au BufNewFile,BufRead *.edn,*.cljs.hl,*.cljx setf clojure

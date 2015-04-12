@@ -24,9 +24,6 @@ map <leader>v   :vsp<CR>
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
 
-" Reload .vimrc
-map <leader>rv  :source ~/.vimrc<CR>
-
 " Auto-indent whole file
 nmap <leader>=  gg=G``
 
@@ -53,9 +50,6 @@ vmap <s-tab> <gv
 
 " FuzzyFinder and switchback commands
 map <leader>b   :FufBuffer<CR>
-
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
 
 " Git blame
 map <leader>g   :Gblame<CR>

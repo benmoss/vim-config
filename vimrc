@@ -48,7 +48,6 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "tpope/vim-surround"
 Bundle "matchit.zip"
 Bundle "nono/vim-handlebars"
-Bundle "ecomba/vim-ruby-refactoring"
 Bundle "L9"
 Bundle "FuzzyFinder"
 Bundle "scrooloose/syntastic"
@@ -58,17 +57,22 @@ Bundle 'Gundo'
 Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'mhinz/vim-signify'
 Bundle "dougireton/vim-chef"
-Bundle 'fatih/vim-go'
 Bundle "flazz/vim-colorschemes"
 
 " Clojure
-Bundle "tpope/vim-leiningen"
-Bundle "tpope/vim-classpath"
+" Bundle "tpope/vim-leiningen"
+" Bundle "tpope/vim-classpath"
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "kien/rainbow_parentheses.vim"
 Bundle 'paredit.vim'
 Bundle "guns/vim-slamhound"
+
+" Haskell
+Bundle "dag/vim2hs"
+
+" Go
+Bundle 'fatih/vim-go'
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
