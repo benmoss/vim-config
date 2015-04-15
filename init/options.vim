@@ -1,4 +1,4 @@
-set guifont=Menlo:h16
+set guifont=Meslo_LG_S:h16
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
@@ -24,11 +24,7 @@ let g:ctrlp_custom_ignore = {
 
 
 set list                        " Show whitespace
-if has("gui_running")
-  set listchars=trail:·
-else
-  set listchars=trail:~
-endif
+set listchars=trail:~
 
 set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers

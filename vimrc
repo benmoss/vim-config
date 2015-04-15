@@ -16,66 +16,74 @@
 
 " Vundle (This must happen first.)
 " --------
+" 
+ filetype off                    " Avoid a Vim/Pathogen bug
+ set nocompatible                " Don't maintain compatibility with vi
+ 
+ if has('vim_starting')
+ if &compatible
+ set nocompatible               " Be iMproved
+ endif
+ set rtp+=~/vimfiles/bundle/neobundle.vim/
+ endif
 
-filetype off                    " Avoid a Vim/Pathogen bug
-set nocompatible                " Don't maintain compatibility with vi
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-
-" Vundles
-" ---------------------------
-
-Bundle "gmarik/vundle"
-Bundle "mileszs/ack.vim"
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
-Bundle "altercation/vim-colors-solarized"
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Bundle "pangloss/vim-javascript"
-Bundle "vim-ruby/vim-ruby"
-Bundle 'ctrlp.vim'
-Bundle 'bling/vim-airline'
-Bundle "tpope/vim-rails"
-Bundle "tpope/vim-unimpaired"
-Bundle "tpope/vim-fugitive"
-Bundle "tpope/vim-endwise"
-Bundle "tpope/vim-haml"
-Bundle "tpope/vim-repeat"
-Bundle "tpope/vim-abolish"
-Bundle "kchmck/vim-coffee-script"
-Bundle "tpope/vim-surround"
-Bundle "matchit.zip"
-Bundle "nono/vim-handlebars"
-Bundle "L9"
-Bundle "FuzzyFinder"
-Bundle "scrooloose/syntastic"
-Bundle 'regreplop.vim'
-Bundle 'Tabular'
-Bundle 'Gundo'
-Bundle 't9md/vim-ruby-xmpfilter'
-Bundle 'mhinz/vim-signify'
-Bundle "dougireton/vim-chef"
-Bundle "flazz/vim-colorschemes"
-
+  call neobundle#begin(expand('~/vimfiles/bundle/'))
+ 
+ 
+ " Vundles
+ " ---------------------------
+ 
+NeoBundleFetch "Shougo/neobundle.vim"
+NeoBundle "mileszs/ack.vim"
+NeoBundle "scrooloose/nerdtree"
+NeoBundle "scrooloose/nerdcommenter"
+NeoBundle "altercation/vim-colors-solarized"
+NeoBundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+NeoBundle "pangloss/vim-javascript"
+NeoBundle "vim-ruby/vim-ruby"
+NeoBundle 'ctrlp.vim'
+NeoBundle 'bling/vim-airline'
+NeoBundle "tpope/vim-rails"
+NeoBundle "tpope/vim-unimpaired"
+NeoBundle "tpope/vim-fugitive"
+NeoBundle "tpope/vim-endwise"
+NeoBundle "tpope/vim-haml"
+NeoBundle "tpope/vim-repeat"
+NeoBundle "tpope/vim-abolish"
+NeoBundle "kchmck/vim-coffee-script"
+NeoBundle "tpope/vim-surround"
+NeoBundle "matchit.zip"
+NeoBundle "nono/vim-handlebars"
+NeoBundle "L9"
+NeoBundle "FuzzyFinder"
+NeoBundle "scrooloose/syntastic"
+NeoBundle 'regreplop.vim'
+NeoBundle 'Tabular'
+NeoBundle 'Gundo'
+NeoBundle 't9md/vim-ruby-xmpfilter'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle "dougireton/vim-chef"
+NeoBundle "flazz/vim-colorschemes"
 " Clojure
-" Bundle "tpope/vim-leiningen"
-" Bundle "tpope/vim-classpath"
-Bundle "tpope/vim-fireplace"
-Bundle "guns/vim-clojure-static"
-Bundle "kien/rainbow_parentheses.vim"
-Bundle 'paredit.vim'
-Bundle "guns/vim-slamhound"
+" NeoBundle "tpope/vim-leiningen"
+" NeoBundle "tpope/vim-classpath"
+NeoBundle "tpope/vim-fireplace"
+NeoBundle "guns/vim-clojure-static"
+NeoBundle "kien/rainbow_parentheses.vim"
+NeoBundle 'paredit.vim'
+NeoBundle "guns/vim-slamhound"
 
 " Haskell
-Bundle "dag/vim2hs"
+NeoBundle "dag/vim2hs"
 
 " Go
-Bundle 'fatih/vim-go'
+NeoBundle 'fatih/vim-go'
+
+call neobundle#end()
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
+NeoBundleCheck
 
 " Source initialization files
 " ---------------------------

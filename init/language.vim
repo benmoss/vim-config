@@ -36,3 +36,4 @@ autocmd FileType markdown,mkd normal zR
 autocmd FileType markdown,mkd setlocal tw=79
 
 au BufNewFile,BufRead *.edn,*.cljs.hl,*.cljx setf clojure
+let g:go_fmt_command = "goimports"
