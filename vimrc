@@ -58,6 +58,7 @@ Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'mhinz/vim-signify'
 Bundle "dougireton/vim-chef"
 Bundle "flazz/vim-colorschemes"
+Bundle "Valloric/YouCompleteMe"
 
 " Clojure
 " Bundle "tpope/vim-leiningen"
@@ -68,11 +69,12 @@ Bundle "kien/rainbow_parentheses.vim"
 Bundle 'paredit.vim'
 Bundle "guns/vim-slamhound"
 
-" Haskell
 Bundle "dag/vim2hs"
-
-" Go
 Bundle 'fatih/vim-go'
+Bundle "rust-lang/rust.vim"
+Bundle "racer-rust/vim-racer"
+Bundle "jplaut/vim-arduino-ino"
+Bundle "lambdatoast/elm.vim"
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
@@ -81,3 +83,7 @@ filetype plugin indent on
 " ---------------------------
 
 runtime! init/**.vim
+
+set hidden
+let g:racer_cmd = "/Users/mossity/bin/racer"
+let $RUST_SRC_PATH="/Users/mossity/workspace/rustc-1.3.0/src/"
